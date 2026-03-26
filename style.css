@@ -1,0 +1,183 @@
+header {
+  background-color: #df4141;
+  color: rgb(208, 211, 218);
+  padding: 20px;
+  text-align: center;
+}
+
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 18vh;
+}
+
+.login {
+  background-color: #111;
+  padding: 15px 30px;
+}
+
+
+/* Nav layout */
+nav {
+  display: flex;
+  justify-content: center; /* center links horizontally */
+  align-items: center;
+  gap: 25px; /* space between links */
+}
+
+/* Nav links */
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  transition: 0.3s;
+}
+
+/* Nav links hover effect */
+nav a:hover {
+  color: #00bcd4;
+}
+
+/* Login link as button */
+.login-btn {
+  background-color: #00bcd4;
+  color: black;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Login button hover */
+.login-btn:hover {
+  background-color: #0097a7;
+  color: white;
+}
+
+/* ---------------------- */
+/* Body Styling           */
+/* ---------------------- */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fcf5b8;
+
+  display: flex;          /* make body a flex container */
+  flex-direction: column; /* navbar on top, form below */
+  min-height: 100vh;      /* fill the viewport height */
+}
+
+/* ---------------------- */
+/* Form Container         */
+/* ---------------------- */
+.form-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px; /* optional for spacing below navbar */
+}
+
+/* ---------------------- */
+/* Login Form Styling     */
+/* ---------------------- */
+.login-form {
+  background-color: #1e293b;
+  padding: 30px;
+  border-radius: 10px;
+  width: 300px;
+  color: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+/* Form title */
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Labels */
+.login-form label {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Inputs */
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* Submit button */
+.login-form input[type="submit"] {
+  width: 150px;           /* smaller button width */
+  margin: 20px auto 0 auto; /* top margin 20px, horizontal auto */
+  padding: 10px;
+  background-color: #00bcd4;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  display: block;         /* needed for margin auto to work */
+}
+
+/* Submit button hover */
+.login-form input[type="submit"]:hover {
+  background-color: #0097a7;
+  color: white;
+}
+
+/* Center the login container */
+.login-container {
+  display: flex;                /* enable flex layout inside container if needed */
+  justify-content: center;      /* center horizontally */
+  align-items: center;          /* center vertically */
+  
+  position: absolute;           /* position relative to viewport */
+  top: 50%;                     /* move top edge to 50% of screen */
+  left: 50%;                    /* move left edge to 50% of screen */
+  transform: translate(-50%, -50%); /* offset by half width & height */
+  
+  background-color: #1e293b;    /* optional styling */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  width: 300px;                 /* fixed width, adjust as needed */
+  color: white;
+}
+
+/* Stylish About paragraph */
+.about {
+  max-width: 700px;              /* limits line length for readability */
+  margin: 20px auto;             /* center horizontally with vertical spacing */
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);  /* subtle translucent background */
+  color: #c02222;                /* light text color for dark background */
+  font-size: 18px;
+  line-height: 1.6;              /* more readable line spacing */
+  border-left: 4px solid #00bcd4; /* accent line for style */
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  font-family: 'Arial', sans-serif;
+  text-align: justify;           /* nicely aligned paragraphs */
+  transition: transform 0.3s;
+}
+
+h2 {
+  color: #c02222;                /* consistent heading color */
+  text-align: center;
+}
+
+/* Optional hover effect */
+.about:hover {
+  transform: scale(1.02);        /* subtle zoom on hover */
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
